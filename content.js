@@ -21,7 +21,7 @@ function hideYouTubeShorts() {
   }
 
   function hideShortsButton() {
-    const shortsButton = document.querySelector('a[title="Shorts"]');
+    const shortsButton = document.querySelector('ytd-guide-entry-renderer a[title="Shorts"]');
     if (shortsButton) {
       shortsButton.style.display = 'none';
       console.log('Hidden YouTube Shorts button in the sidebar');
