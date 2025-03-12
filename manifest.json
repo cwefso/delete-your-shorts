@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Hide YouTube Shorts",
+  "version": "1.0",
+  "description": "Automatically hides YouTube Shorts sections on YouTube.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["*://www.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
